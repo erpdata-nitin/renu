@@ -1,0 +1,83 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-01-06 14:29:38.035053",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "details",
+  "column_break_9y5kb",
+  "todays_man_hours",
+  "column_break_wg9h4",
+  "todays_ratio",
+  "column_break_dhlbq",
+  "accumulate_man_hours_st",
+  "column_break_uy0xn",
+  "accumulate__ratio"
+ ],
+ "fields": [
+  {
+   "fieldname": "details",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Details"
+  },
+  {
+   "fieldname": "todays_man_hours",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": " Today's Man Hours",
+   "precision": "2"
+  },
+  {
+   "fieldname": "column_break_wg9h4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "todays_ratio",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Today's Ratio",
+   "precision": "2"
+  },
+  {
+   "fieldname": "column_break_dhlbq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_uy0xn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "accumulate__ratio",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Accumulate  Ratio",
+   "precision": "2"
+  },
+  {
+   "fieldname": "column_break_9y5kb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "accumulate_man_hours_st",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Accumulate Man Hours",
+   "precision": "2"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-01-08 12:51:15.687056",
+ "modified_by": "Administrator",
+ "module": "Renu",
+ "name": "ST Loss Analysis",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

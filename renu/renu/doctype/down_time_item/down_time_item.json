@@ -1,0 +1,70 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-11-03 11:20:50.484381",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "work_order_child",
+  "job_card",
+  "job_card_actually_time",
+  "time_in_min",
+  "reason"
+ ],
+ "fields": [
+  {
+   "fieldname": "time_in_min",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Down Time In Min",
+   "precision": "2"
+  },
+  {
+   "fieldname": "reason",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Reason"
+  },
+  {
+   "columns": 1,
+   "fieldname": "work_order_child",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Work Order",
+   "options": "Work Order",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "job_card",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Job Card",
+   "options": "Job Card",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "job_card.total_time_in_mins",
+   "fieldname": "job_card_actually_time",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Job Card Actually Time",
+   "precision": "2",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-11-03 15:36:52.183846",
+ "modified_by": "Administrator",
+ "module": "Renu",
+ "name": "Down Time Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

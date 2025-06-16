@@ -1,0 +1,616 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-12-26 16:43:51.438172",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "st_table",
+  "total_kt_timemin",
+  "time_details_tab",
+  "non_effective_time_detail",
+  "total_non_effective_time",
+  "section_break_yd7os",
+  "accidental_time_details",
+  "total_accidental_timemin",
+  "section_break_alkjq",
+  "model_change_over_time_details",
+  "section_break_pdipb",
+  "model_time",
+  "column_break_hwhuo",
+  "model_man_hour",
+  "production_time_deatils_tab",
+  "regular_production_man_hour",
+  "section_break_zcgzt",
+  "total_production_qty",
+  "column_break_vzxsb",
+  "total_man_hourkt",
+  "column_break_11c3s",
+  "total_man_hourst",
+  "section_break_qoyj2",
+  "irregular_production_man_hour",
+  "section_break_1morz",
+  "total_ir_qty",
+  "column_break_e8tmd",
+  "total_ir_kt_man_hour",
+  "column_break_m9bhb",
+  "total_ir_st_man_hour",
+  "amended_from",
+  "section_break_brw7f",
+  "production_manpower",
+  "counter",
+  "section_break_mnja4",
+  "normal_permanent",
+  "column_break_wilu6",
+  "normal_temporary",
+  "column_break_ozhc2",
+  "normal_sub_total",
+  "column_break_9qd0m",
+  "normal_supervisor",
+  "column_break_jyct0",
+  "normal_line_leader",
+  "column_break_caxtv",
+  "normal_repair",
+  "column_break_rv8qh",
+  "normal_transportation",
+  "column_break_w734v",
+  "normal_supp_total",
+  "section_break_whia9",
+  "normal_support",
+  "column_break_gsd0c",
+  "normal_total",
+  "column_break_qputs",
+  "normal_accumulate",
+  "loss_analysis_tab",
+  "normal_working_hours",
+  "column_break_lh0xt",
+  "over_time_working_hours",
+  "section_break_p0dch",
+  "non_st_man_hours",
+  "section_break_drd2k",
+  "total_non_st_man_hours",
+  "column_break_1ebwv",
+  "total_accumulate_man_hours",
+  "section_break_ue1o6",
+  "st_loss_analysis",
+  "section_break_zta27",
+  "st_loss_man_hour",
+  "column_break_5p5wq",
+  "st_loss_ratio",
+  "column_break_sgcsu",
+  "accumulate_st_loss_man",
+  "column_break_rcff7",
+  "accumulate_st_loss_ratio",
+  "effective_man_hoursmin_tab",
+  "production_man_hours",
+  "section_break_cpqd6",
+  "production_sub_total",
+  "column_break_jcf81",
+  "accumulate_sub_total",
+  "section_break_zzb7n",
+  "man_hours",
+  "section_break_czrhz",
+  "man__sub_total",
+  "column_break_a9c6l",
+  "man_accumulate_sub_total",
+  "section_break_wiahs",
+  "other_man_hour_details",
+  "production_analysis_tab",
+  "production_analysis"
+ ],
+ "fields": [
+  {
+   "fieldname": "st_table",
+   "fieldtype": "Table",
+   "label": "S/T Table",
+   "options": "ST Table"
+  },
+  {
+   "fieldname": "total_kt_timemin",
+   "fieldtype": "Float",
+   "label": "Total KT Time(Min)",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "time_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Time Details"
+  },
+  {
+   "fieldname": "non_effective_time_detail",
+   "fieldtype": "Table",
+   "label": "Non Effective Time Detail",
+   "options": "Non Effective Time Detail"
+  },
+  {
+   "fieldname": "total_non_effective_time",
+   "fieldtype": "Float",
+   "label": "Total Non Effective Time",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_yd7os",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "accidental_time_details",
+   "fieldtype": "Table",
+   "label": "Accidental Time Details",
+   "options": "Accidental Time Details"
+  },
+  {
+   "fieldname": "total_accidental_timemin",
+   "fieldtype": "Float",
+   "label": "Total Accidental Time(Min)",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_alkjq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "model_change_over_time_details",
+   "fieldtype": "Table",
+   "label": "Model Change Over Time Details",
+   "options": "Model Change Over Time Details"
+  },
+  {
+   "fieldname": "section_break_pdipb",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "model_time",
+   "fieldtype": "Float",
+   "label": "Model Time"
+  },
+  {
+   "fieldname": "column_break_hwhuo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "model_man_hour",
+   "fieldtype": "Float",
+   "label": "Model Man Hour",
+   "precision": "2"
+  },
+  {
+   "fieldname": "production_time_deatils_tab",
+   "fieldtype": "Tab Break",
+   "label": "Production Time Deatils"
+  },
+  {
+   "fieldname": "regular_production_man_hour",
+   "fieldtype": "Table",
+   "label": "Regular Production Man Hour",
+   "options": "Regular Production Man Hour"
+  },
+  {
+   "fieldname": "section_break_zcgzt",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total_production_qty",
+   "fieldtype": "Float",
+   "label": "Total Production Qty",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_vzxsb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_man_hourkt",
+   "fieldtype": "Float",
+   "label": "Total Man Hour(KT)",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_11c3s",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_man_hourst",
+   "fieldtype": "Float",
+   "label": "Total Man Hour(ST)",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_qoyj2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "irregular_production_man_hour",
+   "fieldtype": "Table",
+   "label": "Irregular Production Man Hour",
+   "options": "Irregular Production Man Hour"
+  },
+  {
+   "fieldname": "section_break_1morz",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total_ir_qty",
+   "fieldtype": "Float",
+   "label": "Total IR Qty",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_e8tmd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_ir_kt_man_hour",
+   "fieldtype": "Float",
+   "label": "Total IR KT Man Hour",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_m9bhb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_ir_st_man_hour",
+   "fieldtype": "Float",
+   "label": "Total IR ST Man Hour",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Daily Production Report",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "production_manpower",
+   "fieldtype": "Table",
+   "label": "Production Manpower",
+   "options": "Production Manpower"
+  },
+  {
+   "fieldname": "section_break_brw7f",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "loss_analysis_tab",
+   "fieldtype": "Tab Break",
+   "label": "Loss Analysis"
+  },
+  {
+   "fieldname": "normal_working_hours",
+   "fieldtype": "Float",
+   "label": "Normal Working Hours(Min)",
+   "precision": "2"
+  },
+  {
+   "fieldname": "over_time_working_hours",
+   "fieldtype": "Float",
+   "label": "Over Time Working Hours(Min)",
+   "precision": "2"
+  },
+  {
+   "fieldname": "non_st_man_hours",
+   "fieldtype": "Table",
+   "label": "Non ST Man Hours",
+   "options": "Non ST Man Hours"
+  },
+  {
+   "fieldname": "column_break_lh0xt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_mnja4",
+   "fieldtype": "Section Break",
+   "label": "Direct Normal working Time M/P"
+  },
+  {
+   "fieldname": "normal_permanent",
+   "fieldtype": "Float",
+   "label": "Direct Permanent Normal Working Time",
+   "precision": "2"
+  },
+  {
+   "fieldname": "normal_temporary",
+   "fieldtype": "Float",
+   "label": "Direct Permanent Normal Temporary Time",
+   "precision": "2"
+  },
+  {
+   "fieldname": "normal_sub_total",
+   "fieldtype": "Float",
+   "label": "Direct Sub Total Normal Working Time",
+   "precision": "2"
+  },
+  {
+   "fieldname": "normal_supervisor",
+   "fieldtype": "Float",
+   "label": "Normal Supervisor",
+   "precision": "2"
+  },
+  {
+   "fieldname": "normal_line_leader",
+   "fieldtype": "Float",
+   "label": "Normal Line Leader",
+   "precision": "2"
+  },
+  {
+   "fieldname": "normal_repair",
+   "fieldtype": "Float",
+   "label": "Normal Repair",
+   "precision": "2"
+  },
+  {
+   "fieldname": "column_break_9qd0m",
+   "fieldtype": "Section Break",
+   "label": "Supplementary Normal working Time M/P"
+  },
+  {
+   "fieldname": "normal_transportation",
+   "fieldtype": "Float",
+   "label": "Normal Transportation",
+   "precision": "2"
+  },
+  {
+   "fieldname": "normal_supp_total",
+   "fieldtype": "Float",
+   "label": "Normal Supp Total",
+   "precision": "2"
+  },
+  {
+   "fieldname": "normal_support",
+   "fieldtype": "Float",
+   "label": "Normal Support",
+   "precision": "2"
+  },
+  {
+   "fieldname": "normal_total",
+   "fieldtype": "Float",
+   "label": "Normal Total",
+   "precision": "2"
+  },
+  {
+   "fieldname": "section_break_p0dch",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_rv8qh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_drd2k",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total_non_st_man_hours",
+   "fieldtype": "Float",
+   "label": "Total Non ST Man Hours",
+   "precision": "2"
+  },
+  {
+   "fieldname": "column_break_1ebwv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_accumulate_man_hours",
+   "fieldtype": "Float",
+   "label": "Total Accumulate Man Hours",
+   "precision": "2"
+  },
+  {
+   "fieldname": "effective_man_hoursmin_tab",
+   "fieldtype": "Tab Break",
+   "label": "Effective Man Hours(Min)"
+  },
+  {
+   "fieldname": "production_man_hours",
+   "fieldtype": "Table",
+   "label": "Production Man Hours",
+   "options": "Production Man Hours"
+  },
+  {
+   "fieldname": "section_break_cpqd6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "production_sub_total",
+   "fieldtype": "Float",
+   "label": "Production Sub Total",
+   "precision": "2"
+  },
+  {
+   "fieldname": "column_break_jcf81",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "accumulate_sub_total",
+   "fieldtype": "Float",
+   "label": "Accumulate Sub Total",
+   "precision": "2"
+  },
+  {
+   "fieldname": "section_break_zzb7n",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "man_hours",
+   "fieldtype": "Table",
+   "label": "Man Hours",
+   "options": "Man Hours"
+  },
+  {
+   "fieldname": "section_break_czrhz",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "man__sub_total",
+   "fieldtype": "Float",
+   "label": "Man  Sub Total",
+   "precision": "2"
+  },
+  {
+   "fieldname": "column_break_a9c6l",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "man_accumulate_sub_total",
+   "fieldtype": "Float",
+   "label": "Man Accumulate Sub Total",
+   "precision": "2"
+  },
+  {
+   "fieldname": "section_break_wiahs",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "other_man_hour_details",
+   "fieldtype": "Table",
+   "label": "Other Man Hour Details",
+   "options": "Other Man Hour Details"
+  },
+  {
+   "fieldname": "column_break_wilu6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_ozhc2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_jyct0",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_caxtv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_w734v",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_whia9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_gsd0c",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "counter",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Counter"
+  },
+  {
+   "fieldname": "section_break_ue1o6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "st_loss_analysis",
+   "fieldtype": "Table",
+   "label": "ST Loss Analysis",
+   "options": "ST Loss Analysis"
+  },
+  {
+   "fieldname": "section_break_zta27",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "st_loss_man_hour",
+   "fieldtype": "Float",
+   "label": "ST Loss Man Hour",
+   "precision": "2"
+  },
+  {
+   "fieldname": "column_break_5p5wq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "st_loss_ratio",
+   "fieldtype": "Float",
+   "label": "ST Loss Ratio",
+   "precision": "2"
+  },
+  {
+   "fieldname": "column_break_sgcsu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "accumulate_st_loss_man",
+   "fieldtype": "Float",
+   "label": "Accumulate ST Loss Man",
+   "precision": "2"
+  },
+  {
+   "fieldname": "column_break_rcff7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "accumulate_st_loss_ratio",
+   "fieldtype": "Float",
+   "label": "Accumulate ST Loss Ratio",
+   "precision": "2"
+  },
+  {
+   "fieldname": "production_analysis_tab",
+   "fieldtype": "Tab Break",
+   "label": "Production Analysis"
+  },
+  {
+   "fieldname": "production_analysis",
+   "fieldtype": "Table",
+   "label": "Production Analysis",
+   "options": "Production Analysis"
+  },
+  {
+   "fieldname": "column_break_qputs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "normal_accumulate",
+   "fieldtype": "Float",
+   "label": "Normal Accumulate",
+   "precision": "2"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-01-08 15:55:41.661939",
+ "modified_by": "Administrator",
+ "module": "Renu",
+ "name": "Daily Production Report",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

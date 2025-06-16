@@ -1,0 +1,100 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{doc_no}",
+ "creation": "2023-10-13 11:15:46.627608",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "doc_no",
+  "model",
+  "column_break_ukdqd",
+  "date",
+  "side",
+  "column_break_dovwi",
+  "machine",
+  "program_name",
+  "section_break_s51vw",
+  "loading_set_up_sheet"
+ ],
+ "fields": [
+  {
+   "fieldname": "doc_no",
+   "fieldtype": "Data",
+   "label": "Doc No"
+  },
+  {
+   "fieldname": "model",
+   "fieldtype": "Data",
+   "label": "Model"
+  },
+  {
+   "fieldname": "column_break_ukdqd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "side",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Side",
+   "options": "Top\nBottom\nTop + Bottom",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_dovwi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "machine",
+   "fieldtype": "Data",
+   "label": "Machine"
+  },
+  {
+   "fieldname": "program_name",
+   "fieldtype": "Data",
+   "label": "Program Name"
+  },
+  {
+   "fieldname": "section_break_s51vw",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "loading_set_up_sheet",
+   "fieldtype": "Table",
+   "label": "Loading Set up Sheet",
+   "options": "Loading Set up Sheet"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-10-13 11:47:27.012433",
+ "modified_by": "Administrator",
+ "module": "Renu",
+ "name": "Loading Set",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

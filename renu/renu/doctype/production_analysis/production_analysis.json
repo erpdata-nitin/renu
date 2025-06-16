@@ -1,0 +1,57 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-01-08 13:53:46.474144",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item",
+  "column_break_b9gty",
+  "today",
+  "column_break_hzrlu",
+  "accumulate"
+ ],
+ "fields": [
+  {
+   "fieldname": "item",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Item"
+  },
+  {
+   "fieldname": "column_break_b9gty",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "today",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Today",
+   "precision": "2"
+  },
+  {
+   "fieldname": "column_break_hzrlu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "accumulate",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Accumulate",
+   "precision": "2"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-01-08 13:57:46.370402",
+ "modified_by": "Administrator",
+ "module": "Renu",
+ "name": "Production Analysis",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

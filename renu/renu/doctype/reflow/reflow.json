@@ -1,0 +1,164 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{document_name}",
+ "creation": "2023-10-09 11:20:57.524316",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "document_name",
+  "column_break_blzdm",
+  "side",
+  "section_break_2ejud",
+  "sp_c",
+  "itemssp",
+  "pv_c",
+  "itemspv",
+  "section_break_vi0fw",
+  "conveyor_cm",
+  "conveyor_min",
+  "column_break_hnq6d",
+  "sec_carrier",
+  "hour_carrier",
+  "column_break_a8dh6",
+  "processed_l1",
+  "processed_l3",
+  "column_break_wpvfq",
+  "in_oven_l1",
+  "in_oven_l2"
+ ],
+ "fields": [
+  {
+   "fieldname": "column_break_blzdm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "side",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Side",
+   "options": "\nTop\nBottom\nTop + Bottom",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_2ejud",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "sp_c",
+   "fieldtype": "Heading",
+   "label": "SP c"
+  },
+  {
+   "fieldname": "itemssp",
+   "fieldtype": "Table",
+   "options": "Reflow Zone Parameter"
+  },
+  {
+   "fieldname": "pv_c",
+   "fieldtype": "Heading",
+   "label": "PV c"
+  },
+  {
+   "fieldname": "itemspv",
+   "fieldtype": "Table",
+   "options": "Reflow Zone Parameter"
+  },
+  {
+   "fieldname": "section_break_vi0fw",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "conveyor_cm",
+   "fieldtype": "Float",
+   "label": "Conveyor cm",
+   "precision": "2"
+  },
+  {
+   "fieldname": "conveyor_min",
+   "fieldtype": "Float",
+   "label": "Conveyor Min",
+   "precision": "2"
+  },
+  {
+   "fieldname": "column_break_hnq6d",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sec_carrier",
+   "fieldtype": "Float",
+   "label": "Sec Carrier",
+   "precision": "2"
+  },
+  {
+   "fieldname": "hour_carrier",
+   "fieldtype": "Float",
+   "label": "Hour Carrier",
+   "precision": "2"
+  },
+  {
+   "fieldname": "column_break_a8dh6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "processed_l1",
+   "fieldtype": "Float",
+   "label": "Processed L1",
+   "precision": "2"
+  },
+  {
+   "fieldname": "processed_l3",
+   "fieldtype": "Float",
+   "label": "Processed L3",
+   "precision": "2"
+  },
+  {
+   "fieldname": "column_break_wpvfq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "in_oven_l1",
+   "fieldtype": "Float",
+   "label": "In Oven L1",
+   "precision": "2"
+  },
+  {
+   "fieldname": "in_oven_l2",
+   "fieldtype": "Float",
+   "label": "In Oven L2",
+   "precision": "2"
+  },
+  {
+   "fieldname": "document_name",
+   "fieldtype": "Data",
+   "label": "Document Name"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-10-09 11:40:20.476953",
+ "modified_by": "Administrator",
+ "module": "Renu",
+ "name": "Reflow",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

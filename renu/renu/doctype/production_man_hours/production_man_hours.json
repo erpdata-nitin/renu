@@ -1,0 +1,57 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-01-03 16:39:46.682409",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item",
+  "column_break_lx85m",
+  "today",
+  "column_break_l60co",
+  "accumulate"
+ ],
+ "fields": [
+  {
+   "fieldname": "item",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Item"
+  },
+  {
+   "fieldname": "today",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Today",
+   "precision": "2"
+  },
+  {
+   "fieldname": "accumulate",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Accumulate(Min)",
+   "precision": "2"
+  },
+  {
+   "fieldname": "column_break_lx85m",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_l60co",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-01-04 10:18:15.822901",
+ "modified_by": "Administrator",
+ "module": "Renu",
+ "name": "Production Man Hours",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

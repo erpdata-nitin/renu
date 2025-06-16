@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include renu *.css
+recursive-include renu *.csv
+recursive-include renu *.html
+recursive-include renu *.ico
+recursive-include renu *.js
+recursive-include renu *.json
+recursive-include renu *.md
+recursive-include renu *.png
+recursive-include renu *.py
+recursive-include renu *.svg
+recursive-include renu *.txt
+recursive-exclude renu *.pyc

@@ -1,0 +1,106 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{work_order}",
+ "creation": "2023-11-03 11:57:29.160819",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "work_order",
+  "down_time_item",
+  "section_break_is3ff",
+  "shift_time",
+  "column_break_6qla2",
+  "actually_work_time",
+  "column_break_ujvkj",
+  "total_down_time",
+  "column_break_xvt3d",
+  "calculate_time"
+ ],
+ "fields": [
+  {
+   "fieldname": "work_order",
+   "fieldtype": "Link",
+   "label": "Work Order",
+   "options": "Work Order"
+  },
+  {
+   "fieldname": "down_time_item",
+   "fieldtype": "Table",
+   "label": "Down Time Item",
+   "options": "Down Time Item"
+  },
+  {
+   "fieldname": "section_break_is3ff",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "work_order.shift_time",
+   "fieldname": "shift_time",
+   "fieldtype": "Float",
+   "label": "Shift Time",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_6qla2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "actually_work_time",
+   "fieldtype": "Float",
+   "label": "Actually Work Time",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_ujvkj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_down_time",
+   "fieldtype": "Float",
+   "label": "Total Down Time",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_xvt3d",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "calculate_time",
+   "fieldtype": "Float",
+   "label": "Calculate Time",
+   "precision": "2",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-11-03 15:33:39.725393",
+ "modified_by": "Administrator",
+ "module": "Renu",
+ "name": "Down Time",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

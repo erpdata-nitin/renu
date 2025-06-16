@@ -1,0 +1,408 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{document_name}",
+ "creation": "2023-10-09 10:31:48.727709",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "document_name",
+  "column_break_assro",
+  "process_parameter",
+  "board_thickness",
+  "squezze_size",
+  "support",
+  "front_rear_print_speed",
+  "separation_speed_mm_sec",
+  "separation__way_mm",
+  "manually_cleaning_after_every",
+  "automatic_stop_solder_paste_refill",
+  "squezze__pressure_n",
+  "snap_off",
+  "auto_cleaning",
+  "inspection_coverage",
+  "temprature",
+  "humidity",
+  "machine_air_pressure",
+  "solder_metal_model",
+  "column_break_892mt",
+  "bottom",
+  "board_thickness_bottom",
+  "squezze_size_bottom",
+  "support_bottom",
+  "front_rear__print_speed_bottom",
+  "separation_speed_mm_sec_bottom",
+  "separation_way_mm_bottom",
+  "manually_cleaning_after_every_bottom",
+  "automatic_stop_solder_paste_refill_bottom",
+  "squezze__pressure_n_bottom",
+  "snap_off_bottom",
+  "auto_cleaning_bottom",
+  "inspection_coverage_bottom",
+  "temprature_bottom",
+  "humidity_bottom",
+  "machine_air_pressure_bottom",
+  "solder_metal_model_bottom",
+  "column_break_fpscw",
+  "top",
+  "board_thickness_top",
+  "squezze_size_top",
+  "support_top",
+  "front_rear__print_speed_top",
+  "separation_speed_mm_sec_top",
+  "separation_way_mm_top",
+  "manually_cleaning_after_every_top",
+  "automatic_stop_solder_paste_refill_top",
+  "squezze__pressure_n_top",
+  "snap_off_top",
+  "auto_cleaning_top",
+  "inspection_coverage_top",
+  "temprature_top",
+  "humidity_top",
+  "machine_air_pressure_top",
+  "solder_metal_model_top"
+ ],
+ "fields": [
+  {
+   "default": "0.06 ~ 1.8 mm",
+   "fieldname": "board_thickness",
+   "fieldtype": "Data",
+   "label": "Board Thickness"
+  },
+  {
+   "default": "250 ~ 450 mm",
+   "fieldname": "squezze_size",
+   "fieldtype": "Data",
+   "label": "Squezze Size"
+  },
+  {
+   "default": "Black / Pin",
+   "fieldname": "support",
+   "fieldtype": "Data",
+   "label": "Support"
+  },
+  {
+   "default": "5 ~ 200 mm/s",
+   "fieldname": "front_rear_print_speed",
+   "fieldtype": "Data",
+   "label": "Front Rear / Print Speed"
+  },
+  {
+   "default": "0 ~ 3",
+   "fieldname": "separation_speed_mm_sec",
+   "fieldtype": "Data",
+   "label": "Separation Speed (mm / sec)"
+  },
+  {
+   "default": "1 ~ 2 mm",
+   "fieldname": "separation__way_mm",
+   "fieldtype": "Data",
+   "label": "Separation  Way (mm)"
+  },
+  {
+   "default": "6 ~ 12 Panel",
+   "fieldname": "manually_cleaning_after_every",
+   "fieldtype": "Data",
+   "label": "Manually Cleaning After Every"
+  },
+  {
+   "default": "Panel / PCB",
+   "fieldname": "automatic_stop_solder_paste_refill",
+   "fieldtype": "Data",
+   "label": "Automatic Stop (Solder Paste Refill)"
+  },
+  {
+   "default": "0 ~ 320 N",
+   "fieldname": "squezze__pressure_n",
+   "fieldtype": "Data",
+   "label": "Squezze  Pressure (N)"
+  },
+  {
+   "default": "0",
+   "fieldname": "snap_off",
+   "fieldtype": "Data",
+   "label": "Snap Off"
+  },
+  {
+   "default": "3 ~ 6",
+   "fieldname": "auto_cleaning",
+   "fieldtype": "Data",
+   "label": "Auto Cleaning"
+  },
+  {
+   "default": "1 ~ 1",
+   "fieldname": "inspection_coverage",
+   "fieldtype": "Data",
+   "label": "Inspection Coverage"
+  },
+  {
+   "default": "19 ~ 25 Deg C",
+   "fieldname": "temprature",
+   "fieldtype": "Data",
+   "label": "Temprature"
+  },
+  {
+   "default": "40% ~60% Rh",
+   "fieldname": "humidity",
+   "fieldtype": "Data",
+   "label": "Humidity"
+  },
+  {
+   "default": "0.4 ~ 0.6 Mpa",
+   "fieldname": "machine_air_pressure",
+   "fieldtype": "Data",
+   "label": "Machine Air Pressure"
+  },
+  {
+   "default": "NA",
+   "fieldname": "solder_metal_model",
+   "fieldtype": "Data",
+   "label": "Solder Metal (Model)"
+  },
+  {
+   "fieldname": "process_parameter",
+   "fieldtype": "Heading",
+   "label": "Process Parameter & Specification"
+  },
+  {
+   "fieldname": "column_break_892mt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "bottom",
+   "fieldtype": "Heading",
+   "label": "Bottom",
+   "precision": "2"
+  },
+  {
+   "fieldname": "board_thickness_bottom",
+   "fieldtype": "Float",
+   "label": "Board Thickness Bottom",
+   "precision": "2"
+  },
+  {
+   "fieldname": "squezze_size_bottom",
+   "fieldtype": "Float",
+   "label": "Squezze Size Bottom"
+  },
+  {
+   "fieldname": "support_bottom",
+   "fieldtype": "Select",
+   "label": "Support Bottom",
+   "options": "\nBlock\nPin"
+  },
+  {
+   "fieldname": "front_rear__print_speed_bottom",
+   "fieldtype": "Float",
+   "label": "Front Rear  Print Speed Bottom",
+   "precision": "2"
+  },
+  {
+   "fieldname": "separation_speed_mm_sec_bottom",
+   "fieldtype": "Float",
+   "label": "Separation Speed (mm / sec) Bottom",
+   "precision": "2"
+  },
+  {
+   "fieldname": "separation_way_mm_bottom",
+   "fieldtype": "Float",
+   "label": "Separation Way (mm) Bottom",
+   "precision": "2"
+  },
+  {
+   "fieldname": "manually_cleaning_after_every_bottom",
+   "fieldtype": "Float",
+   "label": "Manually Cleaning After Every Bottom",
+   "precision": "2"
+  },
+  {
+   "fieldname": "automatic_stop_solder_paste_refill_bottom",
+   "fieldtype": "Float",
+   "label": "Automatic Stop Solder Paste Refill Bottom",
+   "precision": "2"
+  },
+  {
+   "fieldname": "squezze__pressure_n_bottom",
+   "fieldtype": "Float",
+   "label": "Squezze  Pressure (N) Bottom",
+   "precision": "2"
+  },
+  {
+   "fieldname": "snap_off_bottom",
+   "fieldtype": "Float",
+   "label": "Snap Off Bottom",
+   "precision": "2"
+  },
+  {
+   "fieldname": "auto_cleaning_bottom",
+   "fieldtype": "Float",
+   "label": "Auto Cleaning Bottom",
+   "precision": "2"
+  },
+  {
+   "fieldname": "inspection_coverage_bottom",
+   "fieldtype": "Float",
+   "label": "Inspection Coverage Bottom",
+   "precision": "2"
+  },
+  {
+   "fieldname": "temprature_bottom",
+   "fieldtype": "Data",
+   "label": "Temprature Bottom"
+  },
+  {
+   "fieldname": "humidity_bottom",
+   "fieldtype": "Data",
+   "label": "Humidity Bottom"
+  },
+  {
+   "fieldname": "machine_air_pressure_bottom",
+   "fieldtype": "Data",
+   "label": "Machine Air Pressure Bottom"
+  },
+  {
+   "fieldname": "solder_metal_model_bottom",
+   "fieldtype": "Data",
+   "label": "Solder Metal (Model) Bottom"
+  },
+  {
+   "fieldname": "column_break_fpscw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "top",
+   "fieldtype": "Heading",
+   "label": "Top"
+  },
+  {
+   "fieldname": "board_thickness_top",
+   "fieldtype": "Float",
+   "label": "Board Thickness Top",
+   "precision": "2"
+  },
+  {
+   "fieldname": "squezze_size_top",
+   "fieldtype": "Float",
+   "label": "Squezze Size Top",
+   "precision": "2"
+  },
+  {
+   "fieldname": "support_top",
+   "fieldtype": "Select",
+   "label": "Support Top",
+   "options": "\nBlock\nPin"
+  },
+  {
+   "fieldname": "front_rear__print_speed_top",
+   "fieldtype": "Float",
+   "label": "Front Rear  Print Speed Top",
+   "precision": "2"
+  },
+  {
+   "fieldname": "separation_speed_mm_sec_top",
+   "fieldtype": "Float",
+   "label": "Separation Speed (mm / sec) Top",
+   "precision": "2"
+  },
+  {
+   "fieldname": "separation_way_mm_top",
+   "fieldtype": "Float",
+   "label": "Separation Way (mm) Top",
+   "precision": "2"
+  },
+  {
+   "fieldname": "manually_cleaning_after_every_top",
+   "fieldtype": "Float",
+   "label": "Manually Cleaning After Every Top",
+   "precision": "2"
+  },
+  {
+   "fieldname": "automatic_stop_solder_paste_refill_top",
+   "fieldtype": "Float",
+   "label": "Automatic Stop Solder Paste Refill Top",
+   "precision": "2"
+  },
+  {
+   "fieldname": "squezze__pressure_n_top",
+   "fieldtype": "Float",
+   "label": "Squezze  Pressure (N) Top",
+   "precision": "2"
+  },
+  {
+   "fieldname": "snap_off_top",
+   "fieldtype": "Float",
+   "label": "Snap Off Top",
+   "precision": "2"
+  },
+  {
+   "fieldname": "auto_cleaning_top",
+   "fieldtype": "Float",
+   "label": "Auto Cleaning Top",
+   "precision": "2"
+  },
+  {
+   "fieldname": "inspection_coverage_top",
+   "fieldtype": "Float",
+   "label": "Inspection Coverage Top",
+   "precision": "2"
+  },
+  {
+   "fieldname": "temprature_top",
+   "fieldtype": "Data",
+   "label": "Temprature Top"
+  },
+  {
+   "fieldname": "humidity_top",
+   "fieldtype": "Data",
+   "label": "Humidity Top"
+  },
+  {
+   "fieldname": "machine_air_pressure_top",
+   "fieldtype": "Data",
+   "label": "Machine Air Pressure Top"
+  },
+  {
+   "fieldname": "solder_metal_model_top",
+   "fieldtype": "Data",
+   "label": "Solder Metal (Model) Top"
+  },
+  {
+   "fieldname": "document_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Document Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_assro",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-10-09 11:51:21.710249",
+ "modified_by": "Administrator",
+ "module": "Renu",
+ "name": "Paste Printer",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,133 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-01-02 10:46:26.236060",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "particulars",
+  "direct_permanent",
+  "direct_temporary",
+  "sub_total",
+  "column_break_v4b0x",
+  "supplementary_supervisor",
+  "supplementary_line_leader",
+  "supplementary_repair",
+  "supplementary_transportation",
+  "supplementary_sub_total",
+  "column_break_i05w3",
+  "support",
+  "total",
+  "accumulate"
+ ],
+ "fields": [
+  {
+   "fieldname": "particulars",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Particulars",
+   "read_only": 1
+  },
+  {
+   "fieldname": "direct_permanent",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Direct Permanent",
+   "precision": "2"
+  },
+  {
+   "fieldname": "direct_temporary",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Direct Temporary",
+   "precision": "2"
+  },
+  {
+   "fieldname": "sub_total",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Sub Total",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "supplementary_supervisor",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Supplementary Supervisor",
+   "precision": "2"
+  },
+  {
+   "fieldname": "supplementary_line_leader",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Supplementary Line Leader",
+   "precision": "2"
+  },
+  {
+   "fieldname": "supplementary_repair",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": " Supplementary Repair",
+   "precision": "2"
+  },
+  {
+   "fieldname": "supplementary_transportation",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Supplementary Transportation",
+   "precision": "2"
+  },
+  {
+   "fieldname": "supplementary_sub_total",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Supplementary Sub Total",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "support",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Support",
+   "precision": "2"
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Total",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "accumulate",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Accumulate"
+  },
+  {
+   "fieldname": "column_break_v4b0x",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_i05w3",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-01-03 10:28:08.109331",
+ "modified_by": "Administrator",
+ "module": "Renu",
+ "name": "Production Manpower",
+ "name_case": "Title Case",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,80 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-10-07 11:28:51.726287",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "z1",
+  "z2",
+  "z3",
+  "z4",
+  "z5",
+  "z6",
+  "z7"
+ ],
+ "fields": [
+  {
+   "fieldname": "z1",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Z1",
+   "precision": "0"
+  },
+  {
+   "fieldname": "z2",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Z2",
+   "precision": "0"
+  },
+  {
+   "fieldname": "z3",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Z3",
+   "precision": "0"
+  },
+  {
+   "fieldname": "z4",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Z4",
+   "precision": "0"
+  },
+  {
+   "fieldname": "z5",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Z5",
+   "precision": "0"
+  },
+  {
+   "fieldname": "z6",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Z6",
+   "precision": "0"
+  },
+  {
+   "fieldname": "z7",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Z7",
+   "precision": "0"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-10-07 11:32:51.258963",
+ "modified_by": "Administrator",
+ "module": "Renu",
+ "name": "Reflow Zone Parameter",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,59 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-10-09 17:24:31.081883",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "qr_code",
+  "scan",
+  "count",
+  "work_order_pcb_date",
+  "current_time"
+ ],
+ "fields": [
+  {
+   "fieldname": "qr_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "QR Code",
+   "unique": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "count",
+   "fieldtype": "Data",
+   "label": "count"
+  },
+  {
+   "fieldname": "work_order_pcb_date",
+   "fieldtype": "Datetime",
+   "label": "Work Order PCB Date"
+  },
+  {
+   "fieldname": "scan",
+   "fieldtype": "Button",
+   "in_list_view": 1,
+   "label": "Scan"
+  },
+  {
+   "fieldname": "current_time",
+   "fieldtype": "Datetime",
+   "label": "current time"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-12-18 15:21:12.795193",
+ "modified_by": "Administrator",
+ "module": "Renu",
+ "name": "PCB Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

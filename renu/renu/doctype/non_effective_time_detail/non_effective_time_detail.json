@@ -1,0 +1,44 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-12-26 16:41:59.505415",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "reason",
+  "column_break_bbrdh",
+  "non_effective_timemin"
+ ],
+ "fields": [
+  {
+   "fieldname": "reason",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Reason"
+  },
+  {
+   "fieldname": "column_break_bbrdh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "non_effective_timemin",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Non-effective Time(Min)",
+   "precision": "2"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-01-03 12:08:43.121233",
+ "modified_by": "Administrator",
+ "module": "Renu",
+ "name": "Non Effective Time Detail",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

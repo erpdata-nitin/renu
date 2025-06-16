@@ -1,0 +1,36 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2024-10-21 11:42:05.679022",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "modified": "2024-10-21 13:43:44.341164",
+ "modified_by": "Administrator",
+ "module": "Renu",
+ "name": "Log File Details Report",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "",
+ "ref_doctype": "Work Order",
+ "report_name": "Log File Details Report",
+ "report_type": "Script Report",
+ "roles": [
+  {
+   "role": "Stock User"
+  },
+  {
+   "role": "Manufacturing User"
+  },
+  {
+   "role": "PCB Process"
+  },
+  {
+   "role": "System Manager"
+  }
+ ]
+}

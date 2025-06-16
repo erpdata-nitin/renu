@@ -1,0 +1,92 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-12-26 16:33:39.758512",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "model_code",
+  "model_name",
+  "production_qtyunit",
+  "column_break_ps4pv",
+  "ktmin",
+  "ktman_hour",
+  "column_break_fzsat",
+  "stmin",
+  "stman_hour"
+ ],
+ "fields": [
+  {
+   "fetch_from": "model_code.item_name",
+   "fieldname": "model_name",
+   "fieldtype": "Data",
+   "label": "Model Name"
+  },
+  {
+   "fetch_from": "model_name.item_name",
+   "fieldname": "model_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Model Code",
+   "options": "Item"
+  },
+  {
+   "fieldname": "production_qtyunit",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Production Qty(Unit)",
+   "precision": "2"
+  },
+  {
+   "fieldname": "column_break_ps4pv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ktmin",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "KT(Min)",
+   "precision": "2"
+  },
+  {
+   "fieldname": "ktman_hour",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "KT(Man Hour)",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_fzsat",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "stmin",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "ST(Min)",
+   "precision": "2"
+  },
+  {
+   "fieldname": "stman_hour",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "ST(Man Hour)",
+   "precision": "2",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-01-04 11:16:00.432201",
+ "modified_by": "Administrator",
+ "module": "Renu",
+ "name": "Regular Production Man Hour",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
