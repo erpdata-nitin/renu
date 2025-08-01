@@ -85,7 +85,6 @@ def pcb(job_card_doc):
     job_card_doc = json.loads(job_card_doc)  # Parse the incoming document JSON
     response = {}
     
-                                                                                                                                                                                                                                                                                                           
     if job_card_doc.get("counter") == 1:
         # Get the related Work Order document
         work_order_doc = frappe.get_doc('Work Order', job_card_doc.get("work_order"))
