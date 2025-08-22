@@ -438,15 +438,15 @@
 
 frappe.ui.form.on('Job Card Time Log', {
     custom_pcb_test_results: function(frm, cdt, cdn) {
-        // Set current time to `from_time`
-        frappe.model.set_value(cdt, cdn, 'from_time', frappe.datetime.now_datetime());
+        frappe.model.set_value(cdt, cdn, 'to_time', frappe.datetime.now_datetime());
+            frm.refresh_field('time_logs'); 
+            frm.refresh_field('custom_pcb_test_results'); 
     }
 });
 
 frappe.ui.form.on('Job Card', {
     employee: function(frm) {
         if (frm.doc.clear_table_count == 0) {
-            frm.clear_table("time_logs"); 
             frm.refresh_field('time_logs'); 
         }
         var total = 1;
@@ -474,15 +474,15 @@ frappe.ui.form.on('Job Card', {
         }
     },
 
-    pcb_code: function(frm) {
-        frm.call({
-            method: 'renu.renu.utilities.append_data_qrend',
-            args: {
-                doc: frm.doc,
-                pcb_code: frm.doc.pcb_code
-            }
-        });
-    },
+    // pcb_code: function(frm) {
+    //     frm.call({
+    //         method: 'renu.renu.utilities.append_data_qrend',
+    //         args: {
+    //             doc: frm.doc,
+    //             pcb_code: frm.doc.pcb_code
+    //         }
+    //     });
+    // },
 
     custom_scan_pcb: function(frm) {
         if (frm.doc.custom_scan_pcb) {
@@ -490,9 +490,10 @@ frappe.ui.form.on('Job Card', {
     
             frm.doc.time_logs.forEach((item, index) => {
                 if (item.pcb_qr_code == frm.doc.custom_scan_pcb) {
-                    console.log("scanned QR: " + frm.doc.custom_scan_pcb);
+                    // console.log("scanned QR: " + frm.doc.custom_scan_pcb);
                     item.custom_scanned_pcb = frm.doc.custom_scan_pcb;
-                    item.to_time = frappe.datetime.now_datetime();
+                    // item.to_time = frappe.datetime.now_datetime();           // it should change date of from_time but it changes to_time
+                    item.from_time = frappe.datetime.now_datetime();
                     updated_item_index = index; 
                 }
             });
@@ -507,42 +508,13 @@ frappe.ui.form.on('Job Card', {
             frm.doc.time_logs.forEach((item, index) => {
                 item.idx = index + 1;
             });
-            // frm.doc.custom_scan_pcb = "";
-            // frm.refresh_fields();
+            frm.doc.custom_scan_pcb = "";
+            frm.refresh_fields();
             frm.set_value("custom_scan_pcb", "");
             frm.refresh_field("time_logs");
             frm.refresh_field("custom_scan_pcb");
         }
     },
-
-    // custom_scan_pcb: function(frm) {
-    //     if (frm.doc.custom_scan_pcb) {
-    //         let updated_item_index = -1;
-    
-    //         frm.doc.time_logs.forEach((item, index) => {
-    //             if (item.pcb_qr_code == frm.doc.custom_scan_pcb) {
-    //                 console.log("scanned QR: " + frm.doc.custom_scan_pcb);
-    //                 item.custom_scanned_pcb = frm.doc.custom_scan_pcb;
-    //                 item.to_time = frappe.datetime.now_datetime();
-    //                 updated_item_index = index; 
-    //             }
-    //         });
-    
-    //         if (updated_item_index !== -1) {
-    //             // Remove and move the updated row to the top
-    //             let updated_row = frm.doc.time_logs.splice(updated_item_index, 1)[0];
-    //             frm.doc.time_logs.unshift(updated_row);
-    //         }
-    
-    //         // Update serial numbers (idx) to maintain proper order
-    //         frm.doc.time_logs.forEach((item, index) => {
-    //             item.idx = index + 1;
-    //         });
-    //         frm.set_value("custom_scan_pcb", "");
-    //         frm.refresh_field("time_logs");
-    //         frm.refresh_field("custom_scan_pcb");
-    //     }
-    // },
 
     before_save: async function(frm) {
         await frappe.call({
@@ -562,7 +534,7 @@ frappe.ui.form.on('Job Card', {
                 }
             });
 
-            console.log(response.message)
+            // console.log(response.message)
 
             // Update the form with the response
             if (frm.doc.pcd_counter == 0 && frm.doc.counter == 1) {
@@ -592,9 +564,12 @@ frappe.ui.form.on('Job Card', {
             }
 
             if (frm.doc.counter > 1) {
-                console.log(response.message);
+                // console.log(response.message);
                 
                 if (response.message.length > 0) {
+                    // Clear existing time_logs
+                    frm.set_value('time_logs', []);
+                    
                     response.message.forEach(detail => {
                         frm.add_child('time_logs', {
                             pcb_qr_code: detail.pcb_qr_code,
@@ -640,33 +615,34 @@ frappe.ui.form.on('Job Card', {
                 "RF2-1": "Merlin_NBIoT_RF2_units"
             };
 
-            if (frm.doc.operation in dbs) {
-                console.log(frm.doc.time_logs);
+            // if (frm.doc.operation in dbs) {
+            //     // console.log(frm.doc.time_logs);
                 
-                await frappe.call({
-                    method: "renu.renu.utilities.get_db_data",
-                    args: {
-                        job_card_doc: frm.doc,
-                        db_name: dbs[frm.doc.operation]
-                    },
-                    callback: (r) => {
-                        if (r.message) {
-                            for (let row of frm.doc.time_logs) {
-                                if (row.pcb_qr_code && r.message[row.idx - 1] && 
-                                    row.pcb_qr_code == r.message[row.idx - 1][5]) {
-                                    frappe.model.set_value(row.doctype, row.name, 'custom_pcb_test_results',
-                                        r.message[row.idx - 1][7].toLowerCase());
-                                }
-                            }
-                        }
-                    }
-                });
-            } else {
-                console.log(frm.doc.operation);
-            }
+            //     await frappe.call({
+            //         method: "renu.renu.utilities.get_db_data",
+            //         args: {
+            //             job_card_doc: frm.doc,
+            //             db_name: dbs[frm.doc.operation]
+            //         },
+            //         callback: (r) => {
+            //             if (r.message) {
+            //                 for (let row of frm.doc.time_logs) {
+            //                     if (row.pcb_qr_code && r.message[row.idx - 1] && 
+            //                         row.pcb_qr_code == r.message[row.idx - 1][5]) {
+            //                         frappe.model.set_value(row.doctype, row.name, 'custom_pcb_test_results',
+            //                             r.message[row.idx - 1][7].toLowerCase());
+            //                     }
+            //                 }
+            //             }
+            //         }
+            //     });
+            // } else {
+            //     console.log(frm.doc.operation);
+            // }
+            
         }).addClass("btn-danger");
 
-        $('button:contains("Get Data")').prop('disabled', false); 
+        // $('button:contains("Get Data")').prop('disabled', true); 
         frm.refresh_fields();
 
         // Add ICT Verify Results button
